@@ -8,4 +8,6 @@ RUN apt-get update && apt-get upgrade -y && apt-get -y install \
   libelf-dev && \
 npm install -g npm@3.8.7
 
+ENV NPM_CONFIG_LOGLEVEL=warn
+
 CMD npm --version

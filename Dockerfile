@@ -1,6 +1,6 @@
 FROM node:6.7
 MAINTAINER Justas Azna <justas@reederz.com>
-ENV REFRESHED_AT 2016-10-15
+ENV REFRESHED_AT 2016-10-19
 
 # core packages
 RUN apt-get update && apt-get upgrade -y && apt-get -y install \

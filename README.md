@@ -1,3 +1,3 @@
 # docker-node
 
-Custom node@6.7
+Custom node@6.10

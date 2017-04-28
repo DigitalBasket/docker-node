@@ -7,4 +7,6 @@ RUN apt-get update && apt-get upgrade -y && apt-get -y install \
   build-essential \
   libelf-dev
 
+ENV NPM_CONFIG_LOGLEVEL=warn
+
 CMD npm --version

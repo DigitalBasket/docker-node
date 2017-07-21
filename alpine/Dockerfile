@@ -1,9 +1,9 @@
 FROM node:8-alpine
 MAINTAINER Justas Azna <justas@reederz.com>
-ENV REFRESHED_AT 2017-07-19
+ENV REFRESHED_AT 2017-07-21
 
 # core packages
-RUN apk --no-cache add g++ make libelf-dev curl python bash
+RUN apk --no-cache add g++ make curl python bash
 
 RUN apk update && \
         apk add ca-certificates wget && \

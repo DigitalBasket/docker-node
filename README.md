@@ -7,8 +7,7 @@ Custom node
 ```bash
 cd debian
 docker build -t reederz/node .
-docker tag reederz/node reederz/node:6 
-docker tag reederz/node reederz/node:6.11
+docker tag reederz/node reederz/node:8
 docker push reederz/node
 ```
 

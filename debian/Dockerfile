@@ -1,11 +1,9 @@
-FROM node:6.11
+FROM node:8
 MAINTAINER Justas Azna <justas@reederz.com>
-ENV REFRESHED_AT 2017-07-18
+ENV REFRESHED_AT 2017-07-21
 
 # core packages
-RUN apt-get update && apt-get upgrade -y && apt-get -y install \
-  build-essential \
-  libelf-dev
+RUN apt-get update && apt-get upgrade -y && apt-get -y install build-essential
 
 RUN yarn global add node-gyp # see https://github.com/yarnpkg/yarn/issues/2828
 

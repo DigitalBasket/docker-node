@@ -1,6 +1,6 @@
 FROM node:8
 MAINTAINER Justas Azna <justas@reederz.com>
-ENV REFRESHED_AT 2017-07-21
+ENV REFRESHED_AT 2017-09-03
 
 # core packages
 RUN apt-get update && apt-get upgrade -y && apt-get -y install build-essential

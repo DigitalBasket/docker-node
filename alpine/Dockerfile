@@ -1,6 +1,6 @@
 FROM node:8-alpine
 MAINTAINER Justas Azna <justas@reederz.com>
-ENV REFRESHED_AT 2017-07-21
+ENV REFRESHED_AT 2017-09-03
 
 # core packages
 RUN apk --no-cache add g++ make curl python bash

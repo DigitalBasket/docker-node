@@ -1,6 +1,6 @@
 FROM node:8-alpine
 MAINTAINER Justas Azna <justas@reederz.com>
-ENV REFRESHED_AT 2017-09-03
+ENV REFRESHED_AT 2017-10-14
 
 # core packages
 RUN apk --no-cache add g++ make curl python bash
@@ -13,8 +13,6 @@ RUN wget -O /etc/apk/keys/sgerrand.rsa.pub https://raw.githubusercontent.com/sge
         wget https://github.com/sgerrand/alpine-pkg-glibc/releases/download/2.25-r0/glibc-2.25-r0.apk && \
         apk add glibc-2.25-r0.apk && \
         rm glibc-2.25-r0.apk
-
-RUN yarn global add node-gyp # see https://github.com/yarnpkg/yarn/issues/2828
 
 # Install configo
 RUN curl -L https://github.com/bsideup/configo/releases/download/v0.4.1/configo.linux-amd64 > /usr/local/bin/configo && \
